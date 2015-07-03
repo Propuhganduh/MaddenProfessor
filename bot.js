@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexBan = /^\/ban/
       botRegexAd=/^\/advance/;botRegexShrug = /^\/shrug/; botRegexSC = /^\/SDL/i;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexLab = /^\/lab/;
-      botRegexJew = /^\/jew/
+      botRegexJew = /^\/jew/; botRegexRip = \^/rip/
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -73,6 +73,11 @@ function respond() {
   else if(request.text && botRegexJew.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i.groupme.com/307x362.gif.357292f527ad49a38da4e13201fbfa77.large");
+    this.res.end();
+  } 
+   else if(request.text && botRegexRip.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i1.wp.com/whineylimey.com/wp-content/uploads/2014/03/wordoftheweek.jpg?resize=720%2C320");
     this.res.end();
   } 
   else {
