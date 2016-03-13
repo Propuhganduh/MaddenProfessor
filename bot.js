@@ -62,7 +62,7 @@ function respond() {
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://usatbroncoswire.files.wordpress.com/2016/02/von-miller-strip-sack.gif?w=1000");
+    postMessage("http://i.imgur.com/yNBtNiy.gif");
     this.res.end();
   } 
   else if(request.text && botRegexLab.test(request.text)) {
