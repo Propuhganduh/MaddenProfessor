@@ -62,7 +62,7 @@ function respond() {
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.reddit.com/r/maddenall32");
+    postMessage("https://usatbroncoswire.files.wordpress.com/2016/02/von-miller-strip-sack.gif?w=1000");
     this.res.end();
   } 
   else if(request.text && botRegexLab.test(request.text)) {
