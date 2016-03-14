@@ -62,7 +62,7 @@ function respond() {
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/yNBtNiy.gif GG Guys");
+    postMessage("http://i.imgur.com/yNBtNiy.gif");
     this.res.end();
   } 
   else if(request.text && botRegexLab.test(request.text)) {
